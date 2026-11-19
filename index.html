@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DynamicDog – Datenschutzerklärung</title>
+<style>
+  /* Ruhiges Dokument: schmale Lesespalte, Abschnitte mit Feldweg-Grün als Akzent */
+  :root {
+    --bg: #f6f7f3;
+    --surface: #ffffff;
+    --fg: #1f2620;
+    --muted: #5a665c;
+    --line: #d9ded5;
+    --accent: #2f6b45;
+    --display: Georgia, "Times New Roman", serif;
+    --body: system-ui, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151a16; --surface: #1d241f; --fg: #e5ebe4; --muted: #a3b0a5; --line: #334036; --accent: #8fcfa2;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151a16; --surface: #1d241f; --fg: #e5ebe4; --muted: #a3b0a5; --line: #334036; --accent: #8fcfa2;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  main { max-width: 42rem; margin: 0 auto; padding-block: 48px 64px; display: flex; flex-direction: column; gap: 32px; }
+  header { display: flex; flex-direction: column; gap: 8px; border-bottom: 2px solid var(--accent); padding-bottom: 20px; }
+  .app { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-family: var(--display); font-size: 2rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+  h2 { font-family: var(--display); font-size: 1.25rem; margin: 0 0 8px; text-wrap: balance; }
+  .stand { color: var(--muted); margin: 0; }
+  section p, section ul { margin: 0 0 10px; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 4px; }
+  .lead { font-size: 1.1rem; margin: 0; }
+  .facts { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px 20px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+  tr:last-child td { border-bottom: 0; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  footer { color: var(--muted); font-size: 15px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="app">DynamicDog · Android-App</span>
+    <h1>Datenschutzerklärung</h1>
+    <p class="stand">Stand: 19.11.2026</p>
+  </header>
+
+  <p class="lead">DynamicDog ist ein Werkzeug für Hundetrainer: Mantrailing, CaniCross, Social Walks und Rally Obedience planen, aufzeichnen und auswerten. Der gleiche Text steht in der App unter Einstellungen → Datenschutz.</p>
+
+  <section class="facts">
+    <h2>Kurz gesagt</h2>
+    <ul>
+      <li>Alle Daten bleiben auf deinem Handy, außer du verbindest die App freiwillig mit deiner Hundeschule.</li>
+      <li>Kein Konto bei DynamicDog, keine Werbung, keine Analyse- oder Tracking-Dienste.</li>
+      <li>Push-Benachrichtigungen der Hundeschule laufen über Google, aber nur als Signal ohne Inhalt.</li>
+      <li>Standort und Mikrofon nur, solange du selbst aufzeichnest; den Standort außerdem für die Kachel Wetter, wenn sie eingeschaltet ist.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Verantwortlich</h2>
+    <p>Philipp Weißenberger, erreichbar per E-Mail an <a href="mailto:dynamicdogapp@gmail.com">dynamicdogapp@gmail.com</a> oder über <a href="https://github.com/phillhf">github.com/phillhf</a>.</p>
+  </section>
+
+  <section>
+    <h2>Was die App speichert</h2>
+    <p>Alles liegt in der App-eigenen Datenbank und im App-eigenen Ordner auf deinem Handy:</p>
+    <ul>
+      <li>Trails, Läufe, CaniCross-Läufe, Spaziergänge, Social-Walk-Strecken und Gänge mit ihren GPS-Wegen und Zeiten</li>
+      <li>Rally-Parcours und bewertete Läufe</li>
+      <li>Hunde und Hundeführer, wie du sie einträgst</li>
+      <li>Notizen, Bewertungen und Einstellungen</li>
+      <li>Fotos, Videos und Sprachnotizen (Tonaufnahmen), die du in der App aufnimmst, jeweils mit Zeit und Ort</li>
+      <li>Trainingstermine mit Ort</li>
+      <li>Dein Puls beim CaniCross, wenn du einen Pulsmesser koppelst</li>
+      <li>Wenn du dich mit deiner Hundeschule verbindest: deine Hunde, Termine und freigegebenen Trainer-Läufe von dort (siehe „Verbindung zur Hundeschule“)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Standort</h2>
+    <p>Die App nutzt den Standort nur, wenn du eine Aufzeichnung startest oder deine Position auf der Karte ansiehst. Während einer Aufzeichnung läuft sie als Vordergrunddienst mit sichtbarer Benachrichtigung weiter, auch bei gesperrtem Bildschirm. Ohne Aufzeichnung fragt sie den Standort sonst nur für die Kachel Wetter ab, solange die Startseite oder die Wetter-Seite offen ist, und nur, wenn die Kachel eingeschaltet ist. Die Koordinaten gehen auf etwa 1 km gerundet an Open-Meteo. Gespeichert wird dieser Standort nicht, nur die Vorhersage. Die Kachel schaltest du unter Einstellungen aus.</p>
+  </section>
+
+  <section>
+    <h2>Was ins Internet geht</h2>
+    <p>Die App spricht nur diese Dienste an, und nur für den jeweiligen Zweck:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dienst</th><th>Wozu</th><th>Was übertragen wird</th></tr></thead>
+        <tbody>
+          <tr><td>OpenStreetMap, OpenTopoMap, Waymarked Trails</td><td>Kartenkacheln</td><td>der sichtbare Kartenausschnitt</td></tr>
+          <tr><td>mapsforge.org</td><td>Offline-Karten, wenn du eine herunterlädst</td><td>die gewählte Region</td></tr>
+          <tr><td>Nominatim (OpenStreetMap)</td><td>Adresssuche</td><td>dein Suchtext, erst nach Tippen auf „Suchen“</td></tr>
+          <tr><td>BRouter (brouter.de)</td><td>Route entlang der Wege beim Planen</td><td>die Wegpunkte der Strecke</td></tr>
+          <tr><td>Open-Meteo</td><td>Wetter und Vorhersage</td><td>Koordinaten, auf etwa 1 km gerundet, und die Uhrzeit; für die Kachel Wetter die Vorhersage der nächsten Stunden</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Dabei sieht der jeweilige Dienst technisch bedingt deine IP-Adresse. Die App schickt keine Namen, keine Hundedaten und keine aufgezeichneten Wege dorthin. Was bei einer Verbindung zu deiner Hundeschule übertragen wird, steht unter „Verbindung zur Hundeschule“.</p>
+  </section>
+
+  <section>
+    <h2>Mikrofon und Sprachnotizen</h2>
+    <p>Das Mikrofon nutzt die App nur, solange du eine Sprachnotiz aufnimmst; der Knopf ist dabei rot. Die Aufnahme wird als Tondatei auf dem Handy gespeichert.</p>
+    <p>Danach wandelt die App die Aufnahme mit der Spracherkennung deines Handys in Text um (ab Android 13), meist der von Google. Die Erkennung direkt auf dem Handy wird bevorzugt. Gibt es sie nicht, kann die Spracherkennung die Aufnahme nach ihren eigenen Bestimmungen online verarbeiten. Die App bekommt nur den erkannten Text zurück und speichert ihn bei der Sprachnotiz.</p>
+  </section>
+
+  <section>
+    <h2>Pulsmesser</h2>
+    <p>Koppelst du beim CaniCross einen Pulsmesser, etwa einen Brustgurt oder eine Sportuhr, verbindet sich die App per Bluetooth mit ihm, nur solange du die CaniCross-Aufzeichnung vorbereitest oder läufst. Sie liest dabei nur den Puls. Die Pulswerte speichert sie beim Lauf auf dem Handy. Sie stehen auf dem Lauf-Bild und in der GPX-Datei, wenn du beides teilst. An die Hundeschule schickt die App den Puls nicht. Über Bluetooth ermittelt die App keinen Standort.</p>
+  </section>
+
+  <section>
+    <h2>Trails teilen und Kamera</h2>
+    <p>QR-Code und Link enthalten nur den Namen und die Strecke des Trails. Eine GPX-Datei enthält den ganzen Trail mit Läufen, Notizen, Markierungen und Details. Beides geht direkt an den Empfänger, den du wählst, etwa über deinen Messenger. Über einen Server von DynamicDog läuft nichts.</p>
+    <p>Gibt der Trainer einem Hundeführer einen Lauf per QR-Code oder Nachricht weiter, enthält der nur diesen Lauf: Trail, Hundeweg, Hunde- und Hundeführername, Ergebnis, Sterne und Notizen zum Lauf.</p>
+    <p>Teilst du einen Spaziergang, enthält das PDF Karte, Weg, Hundenamen, Wetter, Notizen, Texte von Sprachnotizen und Fotos. Die GPX-Datei enthält nur die Strecke. Beides geht direkt an den Empfänger, den du wählst.</p>
+    <p>Die Kamera nutzt die App direkt nur, solange du einen QR-Code scannst. Sie speichert dabei keine Bilder. Fotos und Videos nimmt die Kamera-App des Handys auf, auf Wunsch auch das Selfie für ein Lauf-Bild. Sie bleiben im App-eigenen Ordner. Ein Lauf-Bild speichert die App beim Lauf. Tippst du auf Speichern, legt sie es zusätzlich in der Galerie des Handys ab. Ein Foto, das du für ein Lauf-Bild aus der Galerie wählst, liest die App nur dafür. Teilst du ein Lauf-Bild, geht es direkt an den Empfänger, den du wählst.</p>
+  </section>
+
+  <section>
+    <h2>Verbindung zur Hundeschule</h2>
+    <p>Freiwillig: Du kannst die App unter Einstellungen → Hundeschule mit dem Server deiner Hundeschule verbinden. Ohne Verbindung geht nichts davon vom Handy weg. Den Server betreibt die Hundeschule, nicht DynamicDog; für die Daten dort ist die Hundeschule verantwortlich. Die Verbindung ist immer verschlüsselt (HTTPS).</p>
+    <ul>
+      <li><strong>Beim Verbinden:</strong> Adresse der Hundeschule, Einladungscode, Benutzername, Passwort und das Gerätemodell, damit du dein Handy in der Geräteliste erkennst. Das Passwort speichert die App nicht, nur einen Zugangsschlüssel, verschlüsselt auf dem Handy.</li>
+      <li><strong>Von der Hundeschule</strong> holt die App beim Öffnen der App, alle 5 Minuten, solange sie offen ist, und im Hintergrund etwa alle 30 Minuten: den Namen der Hundeschule, deine Hunde (Name, Rasse, Geburtsdatum, Allergien, Belohnung) und deine Termine (Zeit, Ort, Titel, Trainer, Hund). Dazu kommen Mantrailing-Läufe, die dein Trainer zu deinen Hunden aufgezeichnet und für dich freigegeben hat: Name des Trainers, Zeit, Werte wie Ergebnis, Strecke und Wetter, seine Notiz und der GPS-Weg mit dem gelegten Trail. Sie stehen schreibgeschützt im Tagebuch. Deine eigene Notiz dazu bleibt auf dem Handy und geht nicht an die Hundeschule. Entfernt die Hundeschule einen solchen Lauf, löscht die App ihn samt deiner Notiz.</li>
+      <li><strong>An die Hundeschule</strong> schickt die App Änderungen an Allergien und Belohnung deiner Hunde. Läufe schickt sie nur, wenn du das Teilen einschaltest: Art, Hund, Zeit, Werte wie Ergebnis, Strecke und Wetter, Notizen und den GPS-Weg. Fotos, Videos und Sprachnotizen schickt sie nicht.</li>
+      <li><strong>Buchen:</strong> Öffnest du „Buchen“, holt die App die freien Angebote, deine Buchungen und den Stand deiner 10er-Karten. Buchst du, schickt sie Angebot, Datum, Uhrzeit und Hund; sagst du ab, die Buchung. Diese Daten speichert die App nicht, sie zeigt sie nur an. Trainer sehen dort ihre Teilnehmerlisten mit Namen von Kunde und Hund und dem Kartenstand und schicken, wer da war. Zu jedem Termin kommt der Treffpunkt (Adresse und, wenn gesetzt, ein Punkt auf der Karte). Trainer schicken beim Ändern des Treffpunkts Adresse und Punkt an die Hundeschule. „Navigation starten“ gibt Adresse und Punkt an die Navi-App, die du auswählst.</li>
+      <li><strong>Benachrichtigungen:</strong> Sind sie unter Einstellungen → Hundeschule an, meldet die App dein Handy bei Firebase Cloud Messaging von Google an (Google Ireland Limited). Google vergibt dafür eine Adresse für dein Handy. Die App schickt sie an die Push-Vermittlung von DynamicDog, einen Dienst bei Cloudflare. Die Vermittlung gibt sie verschlüsselt zurück, und nur diese verschlüsselte Adresse bekommt deine Hundeschule. Gibt es dort etwas Neues für dich, etwa eine Absage, schickt die Hundeschule über die Vermittlung und Google nur das Signal „schau nach“ mit der Adresse der Hundeschule. Namen, Termine und Gründe gehen nie über Google oder die Vermittlung; die App holt sie danach selbst bei der Hundeschule. Die Vermittlung speichert nichts. Google und Cloudflare sehen technisch bedingt die IP-Adresse. Ohne Google-Dienste auf dem Handy gibt es kein Push, die App holt Neues dann wie oben regelmäßig ab. Schaltest du alle Benachrichtigungen aus oder meldest dich ab, löscht die App die Adresse bei der Hundeschule und bei Google.</li>
+      <li><strong>Nachrichten:</strong> Nachrichten der Hundeschule (Absagen mit Grund, neue Treffpunkte, eingetragene und verschobene Termine, Erinnerungen und Mitteilungen) speichert die App bis zu 14 Tage auf dem Handy und zeigt sie unter „Buchen“ beim Briefumschlag. Hängt an einer Mitteilung ein Bild, lädt die App es von der Hundeschule und speichert es ebenso lange. Einen Link aus einer Mitteilung öffnet erst dein Browser, wenn du ihn antippst. Tippst du auf „Gelesen“ oder auf die Benachrichtigung, erfährt die Hundeschule das, damit dein Trainer sieht, dass du Bescheid weißt. Trainer schicken beim Absagen den Grund an die Hundeschule.</li>
+      <li><strong>Löschen:</strong> Bist du als Kunde verbunden und schaltest das Teilen aus oder löschst einen geteilten Lauf, löscht die App ihn auch bei der Hundeschule. Läufe, die ein Trainer teilt, gehören zur Trainingsdokumentation der Hundeschule und bleiben dort; löschen kann sie nur die Hundeschule. Meldest du dich ab, entfernt die App die Daten der Hundeschule vom Handy, auch die Läufe vom Trainer. Bereits geteilte Läufe bleiben dann bei der Hundeschule; schalte vorher das Teilen aus oder wende dich an sie.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Datensicherung</h2>
+    <ul>
+      <li><strong>Automatische Sicherung im Google-Konto:</strong> standardmäßig aus. Schaltest du sie in den Einstellungen ein, sichert Android die Daten der App (ohne Fotos, Videos, Sprachnotizen und Offline-Karten) über die Android-Sicherung in deinem Google-Konto. Dafür gelten die Datenschutzbestimmungen von Google.</li>
+      <li><strong>Sicherungsdatei:</strong> Sie entsteht nur, wenn du sie selbst speicherst, an einem Ort deiner Wahl. Sie enthält auch Fotos, Videos und Sprachnotizen.</li>
+      <li><strong>Neues Handy:</strong> Überträgst du deine Daten direkt von Handy zu Handy, nimmt Android auch Fotos, Videos und Sprachnotizen mit.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Fehlerberichte</h2>
+    <p>Stürzt die App ab, schreibt sie einen Fehlerbericht auf das Handy (Zeitpunkt, App- und Android-Version, Gerätemodell, technische Fehlermeldung). Er verlässt das Handy nur, wenn du ihn über „Fehlerbericht senden“ selbst verschickst.</p>
+  </section>
+
+  <section>
+    <h2>Deine Rechte</h2>
+    <p>Da alle Daten auf deinem Handy liegen, hast du sie selbst in der Hand: Du kannst sie in der App ändern und löschen. Deinstallieren löscht alle Daten. Eine Sicherung im Google-Konto löschst du in den Google-Einstellungen. Für Daten, die bei deiner Hundeschule liegen, wende dich an die Hundeschule. Fragen zum Datenschutz bitte an <a href="mailto:dynamicdogapp@gmail.com">dynamicdogapp@gmail.com</a>.</p>
+  </section>
+
+  <footer>DynamicDog · Datenschutzerklärung für die Android-App</footer>
+</main>
+</body>
+</html>
