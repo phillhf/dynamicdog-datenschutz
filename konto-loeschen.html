@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DynamicDog – Konto löschen</title>
+<style>
+  /* Ruhiges Dokument: schmale Lesespalte, Abschnitte mit Feldweg-Grün als Akzent */
+  :root {
+    --bg: #f6f7f3;
+    --surface: #ffffff;
+    --fg: #1f2620;
+    --muted: #5a665c;
+    --line: #d9ded5;
+    --accent: #2f6b45;
+    --display: Georgia, "Times New Roman", serif;
+    --body: system-ui, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151a16; --surface: #1d241f; --fg: #e5ebe4; --muted: #a3b0a5; --line: #334036; --accent: #8fcfa2;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151a16; --surface: #1d241f; --fg: #e5ebe4; --muted: #a3b0a5; --line: #334036; --accent: #8fcfa2;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  main { max-width: 42rem; margin: 0 auto; padding-block: 48px 64px; display: flex; flex-direction: column; gap: 32px; }
+  header { display: flex; flex-direction: column; gap: 8px; border-bottom: 2px solid var(--accent); padding-bottom: 20px; }
+  .app { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-family: var(--display); font-size: 2rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+  h2 { font-family: var(--display); font-size: 1.25rem; margin: 0 0 8px; text-wrap: balance; }
+  .stand { color: var(--muted); margin: 0; }
+  section p, section ul { margin: 0 0 10px; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 4px; }
+  .lead { font-size: 1.1rem; margin: 0; }
+  .facts { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px 20px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+  tr:last-child td { border-bottom: 0; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  footer { color: var(--muted); font-size: 15px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="app">DynamicDog · Android-App</span>
+    <h1>Konto löschen</h1>
+    <p class="stand">Stand: 19.11.2026 · Entwickler: Philipp Weißenberger</p>
+  </header>
+
+  <p class="lead">Für DynamicDog selbst gibt es kein Konto. Alle Daten der App liegen auf deinem Handy. Ein Konto gibt es nur, wenn du die App mit deiner Hundeschule verbindest. Dieses Konto liegt auf dem Server deiner Hundeschule.</p>
+
+  <section class="facts">
+    <h2>So löschst du dein Konto</h2>
+    <ol>
+      <li>Öffne DynamicDog und tippe oben rechts auf das Zahnrad (Einstellungen).</li>
+      <li>Tippe auf <strong>Hundeschule</strong>.</li>
+      <li>Tippe auf <strong>Konto löschen</strong> und bestätige mit <strong>Endgültig löschen</strong>.</li>
+    </ol>
+    <p>Kannst du die App nicht mehr öffnen, wende dich an deine Hundeschule oder schreib an <a href="mailto:dynamicdogapp@gmail.com">dynamicdogapp@gmail.com</a>. Nenne dabei deine Hundeschule und deinen Benutzernamen. Wir leiten deinen Wunsch an die Hundeschule weiter, weil nur sie Zugriff auf ihren Server hat.</p>
+  </section>
+
+  <section>
+    <h2>Was sofort gelöscht wird</h2>
+    <ul>
+      <li>dein Benutzername und dein Passwort</li>
+      <li>alle Handys, die mit dem Konto angemeldet sind, und ihre Zugangsschlüssel</li>
+      <li>die Adressen für Benachrichtigungen (Push)</li>
+      <li>die Läufe, die du selbst mit der Hundeschule geteilt hast, samt GPS-Strecke</li>
+    </ul>
+    <p>Danach meldet sich die App ab und entfernt die Daten der Hundeschule vom Handy.</p>
+  </section>
+
+  <section>
+    <h2>Was erhalten bleibt</h2>
+    <ul>
+      <li><strong>In der App:</strong> deine Hunde und Trainingsdaten. Sie liegen nur auf deinem Handy. Du löschst sie in der App oder indem du die App deinstallierst.</li>
+      <li><strong>Bei der Hundeschule:</strong> deine Kundendaten wie Name, Verträge, Rechnungen und Buchungen sowie die Läufe, die dein Trainer aufgezeichnet hat. Die Hundeschule bekommt deinen Löschwunsch und löscht diese Daten, sobald sie sie nicht mehr aufbewahren muss, zum Beispiel nach Ablauf gesetzlicher Fristen für Rechnungen. Verantwortlich dafür ist deine Hundeschule.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nur einzelne Daten löschen</h2>
+    <p>Du musst nicht das ganze Konto löschen. Schaltest du unter Einstellungen → Hundeschule das Teilen aus oder löschst einen geteilten Lauf, löscht die App ihn auch bei der Hundeschule. Mit <strong>Abmelden</strong> trennst du nur dieses Handy, das Konto bleibt bestehen.</p>
+  </section>
+
+  <footer>DynamicDog · <a href="./">Datenschutzerklärung</a></footer>
+</main>
+</body>
+</html>
